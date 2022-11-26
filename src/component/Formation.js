@@ -46,7 +46,7 @@ export default function Formation() {
             </ul>
           </li>
           <li className="formation--list--element">
-            Cours sur OpenClassRooms(Septembre-Novembre 2021):
+            Cours sur OpenClassRooms (Septembre-Novembre 2021):
             <ul className="formation--list--element--ul">
               <li className="formation--list--element--li">
                 Apprenez à programmer avec JavaScript

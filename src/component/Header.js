@@ -3,24 +3,21 @@ import pp from "../img/ppHeader.jpg";
 import mailLogo from "../img/mail-logo-white.png";
 import linkedinLogo from "../img/linkedin-logo-white.png";
 import githubLogo from "../img/github-logo-white.png";
+import flagFR from "../img/flag-fr.png";
+import flagUK from "../img/flag-uk.png";
 
 export default function Header() {
   return (
     <header className="header">
+      <div className="header--languages">
+        <img className="header--languages--fr" src={flagFR} onClick="" alt=""/>
+        <img className="header--languages--usa-uk"  src={flagUK} onClick="" alt=""/>
+      </div>
+
       <img className="header--img" src={pp} alt="" />
       <div className="header--content">
         
-        <label className="switch--on">
-          <input type="checkbox" className="switch--input" />
-
-          <div className="switch--circle"></div>
-        </label>
-
-        <label className="switch--off">
-          <input type="checkbox" className="switch--input" />
-
-          <div className="switch--circle"></div>
-        </label>
+     
 
         <h1>Hi, I'm Julien Wolff</h1>
         <h3>Blockchain Developer</h3>
