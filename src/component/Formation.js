@@ -11,61 +11,62 @@ import jsLogo from "../img/logo-formation/javascript-original.png";
 import pythonLogo from "../img/logo-formation/python-original.png";
 
 export default function Formation() {
+  //const [content, setContent] = React.useState();
+
+  
   return (
     <section className="formation">
       <h2 className="section--title">Formation</h2>
       <div className="formation--content">
-        <ul className="formation--list">
-          <li className="formation--list--element">
-            <a
-              href="https://certificate.bcdiploma.com/check/AF32D56CA58A264097E947F84728FD4521BC4938C810958BD2500113851C9CD0ZkQvb0JxclJPU0xhcGNvNTllS1FlWkRNVTY5UU9sWEhGeENQdGQycU1xaW5yRmp0"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Certification Alyra Dévloppeur Blockchain
-            </a>{" "}
-            (Décembre 2021 - Mai 2022):
-            <ul className="formation--list--element--ul">
-              <li className="formation--list--element--li">
-                Developper un smart-contract sur EVM
-              </li>
-              <li className="formation--list--element--li">
-                Adopter les bonnes pratiques de developpement pour reduire les
-                risques
-              </li>
-              <li className="formation--list--element--li">
-                Optimiser son code pour limiter les frais de gas
-              </li>
-              <li className="formation--list--element--li">
-                Integrer la partie front d’une application decentralisee via les
-                librairies
-              </li>
-              <li className="formation--list--element--li">
-                Deployer une application decentralisee sur une Blockchain
-              </li>
-            </ul>
+      <ul className="formation--list">
+      <li className="formation--list--element">
+        <a
+          href="https://certificate.bcdiploma.com/check/AF32D56CA58A264097E947F84728FD4521BC4938C810958BD2500113851C9CD0ZkQvb0JxclJPU0xhcGNvNTllS1FlWkRNVTY5UU9sWEhGeENQdGQycU1xaW5yRmp0"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Alyra Blockchain Developer Certification
+        </a>{" "}
+        (December 2021 - May 2022):
+        <ul className="formation--list--element--ul">
+          <li className="formation--list--element--li">
+          Developing a smart-contract on EVM
           </li>
-          <li className="formation--list--element">
-            Cours sur OpenClassRooms (Septembre-Novembre 2021):
-            <ul className="formation--list--element--ul">
-              <li className="formation--list--element--li">
-                Apprenez à programmer avec JavaScript
-              </li>
-              <li className="formation--list--element--li">
-                Gérez du code avec Git et GitHub
-              </li>
-              <li className="formation--list--element--li">
-                Créez votre site web avec HTML5 et CSS3
-              </li>
-              <li className="formation--list--element--li">
-                Utiliser la ligne de commande dans un terminal
-              </li>
-              <li className="formation--list--element--li">
-                Apprenez à programmer avec Python
-              </li>
-            </ul>
+          <li className="formation--list--element--li">
+          Adopt good development practices to reduce risks
+          </li>
+          <li className="formation--list--element--li">
+          Optimize your code to limit gas costs
+          </li>
+          <li className="formation--list--element--li">
+          Integrating the front-end of a decentralised application via libraries
+          </li>
+          <li className="formation--list--element--li">
+          Deploying a decentralized application on a Blockchain
           </li>
         </ul>
+      </li>
+      <li className="formation--list--element">
+      Course on OpenClassRooms (September-November 2021):
+        <ul className="formation--list--element--ul">
+          <li className="formation--list--element--li">
+          Learn to program with JavaScript
+          </li>
+          <li className="formation--list--element--li">
+          Manage code with Git and GitHub
+          </li>
+          <li className="formation--list--element--li">
+          Create your website with HTML5 and CSS3
+          </li>
+          <li className="formation--list--element--li">
+          Use the command line in a terminal
+          </li>
+          <li className="formation--list--element--li">
+          Learn to program with Python
+          </li>
+        </ul>
+      </li>
+    </ul>
         <div className="formation--logos">
           <img
             title="HTML5"

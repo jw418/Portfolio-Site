@@ -22,7 +22,8 @@ code {
 ---APP---
 ---*/
 .app {
-  max-width: 1200px;
+  max-width: 1500px;
+  min-width: 321px;
   margin: 0 auto;
   flex-wrap: wrap;
   gap: 15px;
@@ -43,32 +44,73 @@ code {
   align-items: center;
   flex-wrap: wrap;
   gap: 3em;  
+  position: relative;
 
   text-align: center;
 }
 
+/* --- Header-MultiLanguagues--- 
 .header--languages{
-  object-position: right top;
+  z-index: 99;
+  position: absolute;
+  top: 9%;
+  right:6%;
+  display: flex;
+  gap:5px;
+  font-size: 1em;
 }
 
+*/
+
+/*
 .header--languages img {
-  width: 1.2em;
+  width: 2em;
   margin: 0.25em;
   cursor: pointer;
   padding: 1px;
 }
 
-.header--languages--fr {
-  border:solid 1px blue;
+.header--languages--fr {  
+  border:solid 1px #0088BB;
   border-radius: 4px;
 }
 
 .header--languages--usa-uk {
-  border:solid 1px blue;
+  border:solid 1px #0088BB;
   border-radius: 4px;
 }
 
+*/
 
+/*
+.header--languages--fr {   
+  color: #ffffff;
+  background-color: #000000;
+  padding-right: 3.5px;
+  padding-left: 3.5px;
+  padding-top: 0;
+  border-radius: 40%;
+  transition: all 250ms ease;
+}
+
+.header--languages--separator{
+  padding-right: 3.5px;
+  padding-left: 3.5px;
+  padding-top: 0;
+  border-radius: 40%;
+}
+
+.header--languages--en{ 
+  color: #ffffff;
+  background-color: #ffffff; 
+  cursor: pointer;
+  padding-right: 3.5px;
+  padding-left: 3.5px;
+  padding-top: 0;
+  border-radius: 40%;
+  transition: all 250ms ease;
+}
+*/
 
 .socials {
   display: flex;
@@ -91,7 +133,7 @@ code {
 }
 
 /*---
----Header logo---
+---Header logos---
 ---*/
 .socials--logo {
   
@@ -122,7 +164,13 @@ code {
   border: solid 1.5px  #000000;
 }
 
+h1 {
+  font-size: 2.5em;
+}
 
+h3 {
+  font-size: 1.5em;
+}
 /* ---
 ---Projects---
 --- */
@@ -130,7 +178,7 @@ code {
 .section--title {
   
   margin: 0 0 2% 2%;
-  font-size: 2.4em;
+  font-size: 2.1em;
   
 }
 
@@ -138,7 +186,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap:1.8em;
+  gap:0.8em;
 }
 
 /*card*/
@@ -264,7 +312,7 @@ code {
 ---*/
 
 .about-me--text {
-  margin: 2% 0 2% 8%;
+  margin: 2% 3% 2% 8%;
 }
 
 /*---
@@ -315,9 +363,12 @@ code {
   }
 }
 
-@media screen and (max-width: 956px) {
+@media screen and (max-width: 1010px) {
   .cards {
     gap:1em;   
+  }
+  .project {
+    width: 400px;
   }
 }
 
@@ -325,8 +376,6 @@ code {
  .project{
   width: 100%;
  }
- .cards {
-  gap:1em;   
 }
 
 @media screen and (max-width: 358px) {
@@ -338,4 +387,3 @@ code {
   }
  }
 
-}

@@ -1,0 +1,37 @@
+Certification Alyra Dévloppeur Blockchain
+Décembre 2021 - Mai 2022
+Developper un smart-contract sur EVM
+Adopter les bonnes pratiques de developpement pour reduire les risques
+Optimiser son code pour limiter les frais de gas
+
+Integrer la partie front d’une application decentralisee via les librairies
+
+Deployer une application decentralisee sur une Blockchain
+
+Cours sur OpenClassRooms (Septembre-Novembre 2021):
+
+Apprenez à programmer avec JavaScript
+Gérez du code avec Git et GitHub
+Créez votre site web avec HTML5 et CSS3
+Utiliser la ligne de commande dans un terminal
+Apprenez à programmer avec Python
+
+#### ANG ####
+
+Alyra Blockchain Developer Certification
+December 2021 - May 2022
+Developing a smart-contract on EVM
+Adopt good development practices to reduce risks
+Optimize your code to limit gas costs
+
+Integrating the front-end of a decentralised application via libraries
+
+Deploying a decentralized application on a Blockchain
+
+Course on OpenClassRooms (September-November 2021):
+
+Learn to program with JavaScript
+Manage code with Git and GitHub
+Create your website with HTML5 and CSS3
+Use the command line in a terminal
+Learn to program with Python

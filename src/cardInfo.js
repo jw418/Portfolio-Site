@@ -27,7 +27,7 @@ export default [
     description: "This portfolio site build from scratch",
     tag: "#React #HTML #CSS #Netlify",
     github: "https://github.com/jw418/Portfolio-Site",
-    site: "https://loquacious-kangaroo-775f16.netlify.app",
+    site: "https://www.jw-web3.com/",
   },
 
   {
