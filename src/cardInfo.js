@@ -5,9 +5,9 @@ export default [
     image: "hangmanScreenshot.PNG",
     description:
       "It's a Decentralized Hangman's Versus Game. You can create or join a game, the winner gets the chips bet.",
-    tag: "#Truffle #Chainlink_VRFv2 #HerokuApp #React #Slither #Web3.js",
+    tag: "#Truffle #Chainlink_VRFv2 #Fleek #IPFS #React #Slither #Web3.js",
     github: "https://github.com/jw418/Penduel",
-    site: "https://hangsmans-versus-game.herokuapp.com/",
+    site: "https://floral-darkness-8082.on.fleek.co/",
   },
  
   {
