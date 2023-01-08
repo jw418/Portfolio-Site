@@ -49,18 +49,31 @@ code {
   text-align: center;
 }
 
-/* --- Header-MultiLanguagues--- 
+/* --- Header-MultiLanguagues--- */
 .header--languages{
   z-index: 99;
   position: absolute;
-  top: 9%;
-  right:6%;
+  top: 0;
+  right:0;
   display: flex;
   gap:5px;
   font-size: 1em;
+  margin-top: 4px;
+  margin-right: 7px;
+}
+.header--languages-isEng{
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  right:0;
+  display: flex;
+  gap:5px;
+  font-size: 1em;
+  margin-top: 4px;
+  margin-right: 7px;
 }
 
-*/
+
 
 /*
 .header--languages img {

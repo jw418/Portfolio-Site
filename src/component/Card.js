@@ -31,7 +31,7 @@ export default function Card(props) {
             <div className="popup-image" onClick={close} style={popupImg}>                
                 <img src={`../image/${props.image}`} alt=""/>
             </div>       
-            <p className="project--description">{props.description}</p>
+            <p className="project--description">{props.isEng ? props.descriptionEN : props.description}</p>
             <p className="project--tag"><i>{props.tag}</i></p>            
             <div className="project--buttons">
                 <a className="project--button--code" href={props.github} target="_blank" rel="noreferrer"><img src={githubLogo} alt=""/>Code</a>                                    

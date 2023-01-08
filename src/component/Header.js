@@ -3,65 +3,23 @@ import pp from "../img/ppHeader.jpg";
 import mailLogo from "../img/mail-logo-white.png";
 import linkedinLogo from "../img/linkedin-logo-white.png";
 import githubLogo from "../img/github-logo-white.png";
-//import flagFR from "../img/flag-fr.png";
-//import flagUK from "../img/flag-uk.png";
+
+
+export default function Header(props) {
+ 
 
 
 
-//< img className="header--languages--fr" src={flagFR} onClick="" alt=""/>
-// <img className="header--languages--usa-uk"  src={flagUK} onClick="" alt=""/>
-export default function Header() {
-  // console.log(props)
-  // const actveStyle = { 
-  //   color: "#ffffff",
-  //   backgroundColor: "#000000",
-  //   paddingRight: "3.5px",
-  //   paddingLeft: "3.5px",
-  //   paddingTop: "0",
-  //   borderRadius: "40%",
-  //   transition: "all 250ms ease"
-  // }
-
-  // const inactiveStyle =  { 
-  //   color: "#000000",
-  //   backgroundColor: "#ffffff",
-  //   cursor: "pointer",
-  //   paddingRight: "3.5px",
-  //   paddingLeft: "3.5px",
-  //   paddingTop: "0",
-  //   borderRadius: "40%",
-  //   transition: "all 250ms ease"
-  // }
-
-  // const fr = ()=> {
-  //   //console.log(props.eng)
-  //   if (props.eng){
-  //     return(<p className="header--languages--fr" style={inactiveStyle} onClick={()=>props.switch}>FR</p>)
-  //   }else{
-  //     return (<p className="header--languages--fr" style={actveStyle}>FR</p>)
-  //   }
-  // }
-
-  // const eng = ()=> {
-  //   if (props.eng){
-  //     return (<p className="header--languages--fr" style={actveStyle}>EN</p>)
-  //   }else{
-  //     return(<p className="header--languages--fr" style={inactiveStyle} onClick={()=>props.switch}>En</p>)
-  //   }
-  // }
-  
-      // <div className="header--languages">
-      //  {fr}
-      //  <p className="header--languages--separator">-</p>
-      //  {eng}
-      // </div>
-  
   return (
-    <header className="header">     
+    <header className="header">  
+      <div className={`header--languages${props.isEng ? "-isEng" : ""}`} onClick={props.toggleLang}>
+        FR - ENG          
+      </div>   
       <img className="header--img" src={pp} alt="" />
       <div className="header--content">
-        <h1>Hi, I'm Julien Wolff</h1>
-        <h3>Blockchain Developer</h3>
+
+        <h1>{props.isEng ? "Hi, I'm Julien Wolff" : "Bonjour, Julien Wolff"}</h1>
+        <h3>{props.isEng ? "Blockchain Developer" : "Développeur Blockchain"}</h3>
         <div className="socials">
           <div className="logo--border">
             <a

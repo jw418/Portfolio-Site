@@ -1,24 +1,28 @@
 import React from "react"
 import './App.css';
 import Formation from "./component/Formation"
-//import AboutMe from "./component/AboutMe"
 import MyProjects from "./component/MyProjects"
 import Header from './component/Header';
 
 function App() {
 
-  // let isEng = true;
+  const [isEng, setIsEng] = React.useState(false)
+  const [isDark, setIsDark] = React.useState(false)
 
-  // function switchLanguage(){
-  //   isEng = !isEng
-  // }
-  //<AboutMe />
+  function toggleLang() {
+    setIsEng(prevState => !prevState)
+  }
+  
+  function toggleStyle() {
+    setIsDark(prevState => !prevState)
+  }
+
 
   return (
     <div className="app">
-      <Header />
-      <MyProjects/>      
-      <Formation />      
+      <Header  toggleStyle={toggleStyle} toggleLang={toggleLang} isEng={isEng} isDark={isDark}/>
+      <MyProjects isEng={isEng} isDark={isDark}/>      
+      <Formation  isEng={isEng} isDark={isDark}/>      
     </div>
   );
 }
