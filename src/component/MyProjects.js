@@ -17,6 +17,7 @@ export default function MyProjects(props) {
         github={card.github}
         site={card.site}
         isEng={props.isEng}
+        isDark={props.isDark}
       />
     );
   });
@@ -24,7 +25,7 @@ export default function MyProjects(props) {
   return (
     <section className="projects">
       <h2 className="section--title">{props.isEng ? "My Projects" : "Mes Projets"}</h2>
-      <div className="cards">
+      <div className="cards" >
         {display}
       </div>
     </section>

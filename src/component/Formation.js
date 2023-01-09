@@ -1,6 +1,7 @@
 import React from "react";
 import gitLogo from "../img/logo-formation/git-plain.png";
 import githubLogo from "../img/logo-formation/github-original.png";
+import githubLogoBlack from  "../img/github-logo-black.png"
 import html5Logo from "../img/logo-formation/html5-original.png";
 import cssLogo from "../img/logo-formation/css3-original.png";
 import nodeJSLogo from "../img/logo-formation/nodejs-original.png";
@@ -18,6 +19,7 @@ export default function Formation(props) {
         <ul className="formation--list">
           <li className="formation--list--element">
             <a
+              className="certif"
               href="https://certificate.bcdiploma.com/check/AF32D56CA58A264097E947F84728FD4521BC4938C810958BD2500113851C9CD0ZkQvb0JxclJPU0xhcGNvNTllS1FlWkRNVTY5UU9sWEhGeENQdGQycU1xaW5yRmp0"
               target="_blank"
               rel="noreferrer"
@@ -114,7 +116,7 @@ export default function Formation(props) {
           <img
             title="Github"
             className="formation--logo"
-            src={githubLogo}
+            src={props.isDark ? githubLogoBlack :githubLogo}
             alt=""
           />
           <img

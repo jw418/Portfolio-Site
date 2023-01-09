@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
@@ -29,8 +29,18 @@ code {
   gap: 15px;
 }
 
+.app-dark {
+  background-color: #1c1c1e;
+  color: #fefefe;
+  max-width: 1500px;
+  min-width: 321px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 15px;
+  outline: solid 3000px #1c1c1e;
+}
+
 .header,
-.about-me,
 .projects,
 .formation {
   padding: 25px 25px 25px;
@@ -43,87 +53,85 @@ code {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3em;  
+  gap: 3em;
   position: relative;
-
   text-align: center;
 }
 
+
+
 /* --- Header-MultiLanguagues--- */
-.header--languages{
+.header--languages {
   z-index: 99;
   position: absolute;
+  cursor: pointer;
   top: 0;
-  right:0;
+  right: 0;
   display: flex;
-  gap:5px;
+  gap: 5px;
   font-size: 1em;
   margin-top: 4px;
   margin-right: 7px;
+  text-decoration: none;
 }
-.header--languages-isEng{
+
+.header--languages-isEng {
   z-index: 99;
   position: absolute;
   top: 0;
-  right:0;
+  right: 0;
   display: flex;
-  gap:5px;
+  gap: 5px;
   font-size: 1em;
   margin-top: 4px;
   margin-right: 7px;
-}
-
-
-
-/*
-.header--languages img {
-  width: 2em;
-  margin: 0.25em;
   cursor: pointer;
-  padding: 1px;
+  text-decoration: none;
 }
 
-.header--languages--fr {  
-  border:solid 1px #0088BB;
-  border-radius: 4px;
+.header--languages-en-on,
+.header--languages-fr-on {
+  color: #000000;
+  font-weight: 700;
 }
 
-.header--languages--usa-uk {
-  border:solid 1px #0088BB;
-  border-radius: 4px;
+.header--languages-en-on-dark,
+.header--languages-fr-on-dark {
+  color: #0088bb;
+  font-weight: 700;
 }
 
-*/
-
-/*
-.header--languages--fr {   
-  color: #ffffff;
-  background-color: #000000;
-  padding-right: 3.5px;
-  padding-left: 3.5px;
-  padding-top: 0;
-  border-radius: 40%;
-  transition: all 250ms ease;
+.header--languages-en-off,
+.header--languages-fr-off {
+  color: gray;
+  transition: "all 250ms ease"
 }
 
-.header--languages--separator{
-  padding-right: 3.5px;
-  padding-left: 3.5px;
-  padding-top: 0;
-  border-radius: 40%;
+.header--languages-en-off-dark,
+.header--languages-fr-off-dark {
+  color: gray;
+  transition: "all 250ms ease"
 }
 
-.header--languages--en{ 
-  color: #ffffff;
-  background-color: #ffffff; 
+
+
+/* --- Header-light/dark mod--- */
+.header--style {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  right: 63px;
+  display: flex;
+  gap: 5px;
+  font-size: 1em;
+  margin-top: 6px;
+  margin-right: 7px;
   cursor: pointer;
-  padding-right: 3.5px;
-  padding-left: 3.5px;
-  padding-top: 0;
-  border-radius: 40%;
-  transition: all 250ms ease;
+  text-decoration: none;
+  height: 20px;
+
 }
-*/
+/* --- --- */
 
 .socials {
   display: flex;
@@ -149,7 +157,7 @@ code {
 ---Header logos---
 ---*/
 .socials--logo {
-  
+
   margin: 25px auto 0;
   background: #000000;
   margin: 2px;
@@ -163,18 +171,47 @@ code {
   transition: all .3s ease;
 }
 
+.socials--logo-dark {
+
+  margin: 25px auto 0;
+  background: #ffffff;
+  margin: 2px;
+
+  padding: 4px;
+  width: 30px;
+
+  border: none;
+  border-radius: 25%;
+
+  transition: all .3s ease;
+}
 
 .logo--border {
   border: solid 1.5px #ffffff;
   display: flex;
   border-radius: 25%;
-  width:37px;
+  width: 37px;
   justify-content: center;
   margin: 3px;
   transition: all .3s ease;
 }
+
 .logo--border:hover {
-  border: solid 1.5px  #000000;
+  border: solid 1.5px #000000;
+}
+
+.logo--border-dark {
+  border: solid 1.5px #1c1c1e;
+  display: flex;
+  border-radius: 25%;
+  width: 37px;
+  justify-content: center;
+  margin: 3px;
+  transition: all .3s ease;
+}
+
+.logo--border-dark:hover {
+  border: solid 1.5px #fefefe;
 }
 
 h1 {
@@ -184,22 +221,23 @@ h1 {
 h3 {
   font-size: 1.5em;
 }
+
 /* ---
 ---Projects---
 --- */
 
 .section--title {
-  
+
   margin: 0 0 2% 2%;
   font-size: 2.1em;
-  
+
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap:0.8em;
+  gap: 0.8em;
 }
 
 /*card*/
@@ -213,7 +251,6 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #ffffff; 
   border: 2px solid #0088BB;
 }
 
@@ -234,33 +271,36 @@ h3 {
 
 /*---Card photo---*/
 .project--img {
-  width: 100%;  
+  width: 100%;
   margin: 20px 0 10px;
   object-fit: cover;
   overflow: hidden;
 
-  border-radius: 8px; 
-  transition:transform 0.25s ease;
+  border-radius: 8px;
+  transition: transform 0.25s ease;
 }
+
 .project--img:hover {
-  -webkit-transform:scale(1.1); /* or some other value */
-  transform:scale(1.1);
+  -webkit-transform: scale(1.1);
+  /* or some other value */
+  transform: scale(1.1);
   border: solid 1px grey;
 }
 
 /*---Card photo popup---*/
 .popup-image {
   position: fixed;
-  top:0; left:0;
-  background:rgba(0, 0, 0, .9);
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .9);
   height: 100%;
   width: 100%;
   z-index: 100;
-  
+
 }
 
-.popup-image img{
-  
+.popup-image img {
+
   border: 5px solid #fff;
   border-radius: 5px;
   max-width: 90%;
@@ -278,8 +318,8 @@ h3 {
 .project--buttons {
   display: flex;
   flex-wrap: wrap;
-  gap:30px;
-  
+  gap: 30px;
+
   justify-content: center;
 }
 
@@ -295,7 +335,7 @@ h3 {
   transition: all 250ms ease;
 }
 
-.project--button--site {  
+.project--button--site {
   background: #0088BB;
   padding: 15px 19px 0px 18px;
   color: white;
@@ -304,13 +344,19 @@ h3 {
 .project--button--code {
   background: #161b22;
   color: white;
-  padding: 3px 19px 3px 8px; 
- 
+  padding: 3px 19px 3px 8px;
+
+}
+
+.project--button--code-dark {
+  background: #000000;
+  color: white;
+  padding: 3px 19px 3px 8px;
+
 }
 
 .project--button--code img {
   vertical-align: -15px;
-  background: #161b22;
   margin: 7px 10px 6px 3px;
   padding: 1px;
   width: 35px;
@@ -320,13 +366,17 @@ h3 {
   transition: all 250ms ease;
 }
 
-/*---
----About-me---
----*/
-
-.about-me--text {
-  margin: 2% 3% 2% 8%;
+.project--button--code-dark img {
+  vertical-align: -15px;
+  margin: 7px 10px 6px 3px;
+  padding: 1px;
+  width: 35px;
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: all 250ms ease;
 }
+
 
 /*---
 ---Formation---
@@ -340,7 +390,7 @@ h3 {
 }
 
 .formation--list--element {
- margin-bottom: 3%;
+  margin-bottom: 3%;
 }
 
 .formation--list--element--ul {
@@ -364,6 +414,9 @@ h3 {
   max-width: 80px;
 }
 
+.certif {
+  color: #0088BB
+}
 
 
 
@@ -372,31 +425,32 @@ h3 {
 ---*/
 @media screen and (max-width: 400px) {
   .project--buttons {
-    gap:10px;   
+    gap: 10px;
   }
 }
 
 @media screen and (max-width: 1010px) {
   .cards {
-    gap:1em;   
+    gap: 1em;
   }
+
   .project {
     width: 400px;
   }
 }
 
 @media screen and (max-width: 923px) {
- .project{
-  width: 100%;
- }
+  .project {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 358px) {
-  .project--buttons{
+  .project--buttons {
     gap: 0;
-  } 
+  }
+
   .project a {
     margin: 2px;
   }
- }
-
+}

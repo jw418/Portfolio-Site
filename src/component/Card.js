@@ -34,7 +34,7 @@ export default function Card(props) {
             <p className="project--description">{props.isEng ? props.descriptionEN : props.description}</p>
             <p className="project--tag"><i>{props.tag}</i></p>            
             <div className="project--buttons">
-                <a className="project--button--code" href={props.github} target="_blank" rel="noreferrer"><img src={githubLogo} alt=""/>Code</a>                                    
+                <a className={`project--button--code${props.isDark ? "-dark" : ""}`} href={props.github} target="_blank" rel="noreferrer"><img src={githubLogo} alt=""/>Code</a>                                    
                 {websiteButton}
                 
             </div>

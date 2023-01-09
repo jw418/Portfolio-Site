@@ -7,7 +7,7 @@ import Header from './component/Header';
 function App() {
 
   const [isEng, setIsEng] = React.useState(false)
-  const [isDark, setIsDark] = React.useState(false)
+  const [isDark, setIsDark] = React.useState(true)
 
   function toggleLang() {
     setIsEng(prevState => !prevState)
@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <div className="app">
+    <div className={`app${isDark ? "-dark" : ""}`}>
       <Header  toggleStyle={toggleStyle} toggleLang={toggleLang} isEng={isEng} isDark={isDark}/>
       <MyProjects isEng={isEng} isDark={isDark}/>      
       <Formation  isEng={isEng} isDark={isDark}/>      
