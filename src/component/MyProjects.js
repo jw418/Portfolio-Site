@@ -1,11 +1,11 @@
 import React from "react";
-import cardInfo from "../cardInfo.js";
+import {data} from "../cardInfo.js";
 import Card from "./Card";
 
 export default function MyProjects(props) {
 
 
-  const display = cardInfo.map((card) => {
+  const display = data.map((card) => {
     return (
       <Card
         key={card.id}

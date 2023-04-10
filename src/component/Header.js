@@ -1,5 +1,5 @@
 import React from "react";
-import pp from "../img/ppHeader.jpg";
+//import pp from "../img/ppHeader.jpg";
 import mailLogo from "../img/mail-logo-white.png";
 import mailLogoDark from "../img/mail-logo-dark.png";
 import linkedinLogo from "../img/linkedin-logo-white.png";
@@ -16,6 +16,14 @@ export default function Header(props) {
         className={`header--languages${props.isEng ? "-isEng" : ""}`}
         onClick={props.toggleLang}
       >
+         <p
+          className={`header--languages-en${props.isEng ? "-on" : "-off"}${
+            props.isDark ? "-dark" : ""
+          }`}
+        >
+          EN
+        </p>      
+        -       
         <p
           className={`header--languages-fr${props.isEng ? "-off" : "-on"}${
             props.isDark ? "-dark" : ""
@@ -23,25 +31,18 @@ export default function Header(props) {
         >
           FR
         </p>
-        -
-        <p
-          className={`header--languages-en${props.isEng ? "-on" : "-off"}${
-            props.isDark ? "-dark" : ""
-          }`}
-        >
-          EN
-        </p>
       </div>
       <img
         className="header--style"
         src={props.isDark ? switchToLight : switchToDark}
         onClick={props.toggleStyle}
+        alt=""
       />
 
-      <img className="header--img" src={pp} alt="" />
+      <img className="header--img" src="https://avatars.githubusercontent.com/u/94624740?v=4" alt="" />
       <div className="header--content">
         <h1>
-          {props.isEng ? "Hi, I'm Julien Wolff" : "Bonjour, Julien Wolff"}
+          {props.isEng ? "Hi, I'm jw418" : "Bonjour, jw418"}
         </h1>
         <h3>
           {props.isEng ? "Blockchain Developer" : "Développeur Blockchain"}
@@ -49,9 +50,9 @@ export default function Header(props) {
         <div className="socials">
           <div className={`logo--border${props.isDark ? "-dark" : ""}`}>
             <a
-              title="wolffjulien8@gmail.com"
+              title="belkin1818@protonmail.com"
               className="socials--mail"
-              href="mailto:wolffjulien8@gmail.com"
+              href="mailto:belkin1818@protonmail.com"
             >
               <img
                 className={`socials--logo${props.isDark ? "-dark" : ""}`}
@@ -60,21 +61,7 @@ export default function Header(props) {
               />
             </a>
           </div>
-          <div className={`logo--border${props.isDark ? "-dark" : ""}`}>
-            <a
-              title="https://www.linkedin.com/in/julien-wolff-web3/"
-              className="socials--linkedin"
-              href="https://www.linkedin.com/in/julien-wolff-web3/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className={`socials--logo${props.isDark ? "-dark" : ""}`}
-                src={props.isDark ? linkedinLogoDark : linkedinLogo}
-                alt=""
-              />
-            </a>
-          </div>
+        
           <div className={`logo--border${props.isDark ? "-dark" : ""}`}>
             <a
               title="https://github.com/jw418"
